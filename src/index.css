@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-retro-alt {
+    font-family: 'VT323', monospace;
+  }
+}
+
+/* 64-Bit / Pixel Borders & Shadows */
+.pixel-box {
+  box-shadow: 
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000,
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    inset -4px -4px 0 0 rgba(0, 0, 0, 0.4),
+    inset 4px 4px 0 0 rgba(255, 255, 255, 0.35);
+}
+
+.pixel-box-gold {
+  box-shadow: 
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000,
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    inset -4px -4px 0 0 #8b6d00,
+    inset 4px 4px 0 0 #fff59d;
+}
+
+.pixel-box-cyan {
+  box-shadow: 
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000,
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    inset -4px -4px 0 0 #003e66,
+    inset 4px 4px 0 0 #a5f3fc;
+}
+
+.pixel-box-green {
+  box-shadow: 
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000,
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    inset -4px -4px 0 0 #006633,
+    inset 4px 4px 0 0 #a7f3d0;
+}
+
+.pixel-box-red {
+  box-shadow: 
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000,
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    inset -4px -4px 0 0 #66001a,
+    inset 4px 4px 0 0 #fca5a5;
+}
+
+/* Button push effect */
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 
+    0 -2px 0 0 #000,
+    0 2px 0 0 #000,
+    -2px 0 0 0 #000,
+    2px 0 0 0 #000;
+}
+
+/* Scanlines overlay */
+.scanlines-overlay {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.22) 50%),
+              linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 3px, 4px 100%;
+  pointer-events: none;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #001740;
+}
+::-webkit-scrollbar-thumb {
+  background: #00B4FF;
+  border: 1px solid #000;
+}
+

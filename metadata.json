@@ -1,0 +1,6 @@
+{
+  "name": "Albercas Cabo - Pool Quest 64",
+  "description": "App móvil gamificada estilo 64-bit para técnicos de mantenimiento de piscinas en Los Cabos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
